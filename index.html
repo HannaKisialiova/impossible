@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/style.min.css">
+
+   <meta name="description" content="Web студия разработка сайтов в Челябинске, создание и раскрутка сайта недорого">
+   <title>Бюро Невозможного - Web студия разработка сайтов, создание и раскрутка сайта недорого</title>
+</head>
+
+<body>
+   <div class="wrapper ">
+      <header class="header general-background-color">
+         <div class="header__container container">
+            <div class="header__content-container content-container">
+               <nav class="nav" id="up">
+                  <ul class="nav__list">
+                     <li class="nav__item">
+                        <a href="index.html" class="nav__logo-link">
+                           <img src="img/logo.svg" alt="логотип бюро" class="nav__logo-img">
+                        </a>
+                     </li>
+                     <li class="nav__item location">
+                        <select name="select" class="nav__select">
+                           <option value="Санкт-Петербург" selected>Санкт-Петербург</option>
+                           <option value="Уфа">Уфа</option>
+                           <option value="Москва">Москва</option>
+                           <option value="Казань">Казань</option>
+                           <option value="Самара">Самара</option>
+                           <option value="Челябинск">Челябинск</option>
+                           <option value="Саратов">Саратов</option>
+                        </select>
+                        <img src="img/location.svg" alt="значок локации" class="nav__select-location">
+
+                     </li>
+                     <li class="nav__item menu">
+                        <ul class="nav__menu">
+                           <li class="nav__menu-item"><a href="#!" class="nav__menu-link">
+                                 Услуги
+                              </a></li>
+                           <li class="nav__menu-item"><a href="#!" class="nav__menu-link">
+                                 Портфолио
+                              </a></li>
+                           <li class="nav__menu-item"><a href="#!" class="nav__menu-link">
+                                 Отзывы
+                              </a></li>
+                           <li class="nav__menu-item"><a href="#!" class="nav__menu-link">
+                                 Награды
+                              </a></li>
+                           <li class="nav__menu-item"><a href="#!" class="nav__menu-link">
+                                 Блог
+                              </a></li>
+                           <li class="nav__menu-item"><a href="#!" class="nav__menu-link">
+                                 Контакты
+                              </a></li>
+                        </ul>
+                     </li>
+                     <li class="nav__item">
+                        <a href="tel:+79656570023" class="nav__tel">
+                           +7 (965) 657-00-23
+                        </a> <br>
+                        <span class="nav__tel-adress">
+                           Маршала Говорова, 35а
+                        </span>
+                     </li>
+                     <div class="burger-icon">
+                        <span class="burger-icon__line"></span>
+                     </div>
+                  </ul>
+                  <a href="#up" class="button-up-link">
+                     <img src="img/up.svg" alt="кнопка вверх" class="button-up"></a>
+               </nav>
+               <div class="main-header">
+                  <div class="main-header__top">
+                     <div class="squiggly">
+                        <svg style="width:0; height:0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                           <defs>
+                              <filter id="squiggly-0">
+                                 <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise"
+                                    seed="0" />
+                                 <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+                              </filter>
+                              <filter id="squiggly-1">
+                                 <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise"
+                                    seed="1" />
+                                 <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" />
+                              </filter>
+                              <filter id="squiggly-2">
+                                 <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise"
+                                    seed="2" />
+                                 <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+                              </filter>
+                              <filter id="squiggly-3">
+                                 <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise"
+                                    seed="3" />
+                                 <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" />
+                              </filter>
+                              <filter id="squiggly-4">
+                                 <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise"
+                                    seed="4" />
+                                 <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" />
+                              </filter>
+                           </defs>
+                        </svg>
+                        <img src="img/logo.svg" alt="логотип бюро" class="main-header__logo">
+                     </div>
+                     <h1 class="main-header__title">
+                        Веб-студия для вашего <br>
+                        бизнеса
+                     </h1>
+                     <img src="img/yellow-card.svg" alt="отзыв1" class="main-header__back-img1">
+                     <img src="img/pink-card.png" alt="отзыв2" class="main-header__back-img2">
+                     <img src="img/blue-card.svg" alt="отзыв3" class="main-header__back-img3">
+                  </div>
+                  <div class="main-header__bottom">
+                     <ul class="main-header__about-list">
+                        <li class="main-header__about-item">
+                           Специализируемся на высокой конверсии
+                        </li>
+                        <li class="main-header__about-item">
+                           Маркетинговый анализ конкурентов
+                        </li>
+                        <li class="main-header__about-item">
+                           Гарантия 3 года на все работы
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main class="main general-background-color ">
+         <div class="main__container container">
+            <div class="main__content-container content-container">
+
+               <form action="" class="main__form caclulation-call" method="post">
+                  <p class="caclulation-call__title">
+                     Рассчитайте <br> стоимость сайта
+                  </p>
+                  <ul class="caclulation-call__list">
+                     <li class="caclulation-call__list-item">
+                        <input type="text" name="user_name" placeholder="Имя *">
+                     </li>
+                     <li class="caclulation-call__list-item">
+                        <input type="email" inputmode="email" name="user_mail" placeholder="E-mail *">
+                     </li>
+                     <li class="caclulation-call__list-item">
+
+                        <input type="tel" inputmode="tel" name="user_tel" placeholder="Телефон *">
+                     </li>
+                  </ul>
+                  <button type="submit"> Рассчитать</button>
+               </form>
+
+
+               <section class=" main__promotion promotion">
+                  <h2 class="promotion__title">
+                     Как мы продвинем ваш бизнес
+                  </h2>
+                  <div class="slider-wrapper">
+                     <div class="swiper">
+                        <div class="promotion__container swiper-wrapper">
+                           <a href="#" class="promotion__link swiper-slide">
+                              <div class="promotion__item cite-card">
+                                 <span class="cite-card__title">
+                                    СА <br> й <br> ты
+
+                                 </span>
+                                 <img src="img/cite-card-back.svg" alt="фоновая картинка" class="cite-card__img">
+                              </div>
+                           </a>
+                           <a href="#" class="promotion__link swiper-slide">
+                              <div class="promotion__item commercial-card">
+                                 <div class="commercial-card__title">
+                                    ре <br> кла <br> ма
+
+                                 </div>
+                                 <img src="img/ggleicon.svg" id="google" alt="гугл" class="commercial-card__google1">
+                                 <img src="img/ggleicon.svg" id="google1" alt="гугл" class="commercial-card__google2">
+                                 <img src="img/ggleicon.svg" id="google2" alt="гугл" class="commercial-card__google3">
+                                 <img src="img/yandicon.svg" id="yandex" alt="яндекс" class="commercial-card__yand1">
+                                 <img src="img/yandicon.svg" id="yandex1" alt="яндекс" class="commercial-card__yand2">
+                                 <img src="img/yandicon.svg" id="yandex2" alt="яндекс" class="commercial-card__yand3">
+                              </div>
+                           </a>
+                           <a href="#" class="promotion__link swiper-slide">
+                              <div class="promotion__item seo ">
+                                 <p class="seo__text">
+                                    <span class="seo__item">s</span>
+                                    <span class="seo__item">e</span>
+                                    <span class="seo__item">o</span>
+                                    <span class="seo__item">s</span>
+                                    <span class="seo__item">e</span>
+                                    <span class="seo__item">o</span>
+                                    <span class="seo__item">s</span>
+                                    <span class="seo__item">e</span>
+                                    <span class="seo__item">o</span>
+                                    <span class="seo__item">s</span>
+                                    <span class="seo__item">e</span>
+                                    <span class="seo__item">o</span>
+                                    <span class="seo__item">e</span>
+                                    <span class="seo__item">o</span>
+                                    <span class="seo__item">s</span>
+                                    <span class="seo__item">e</span>
+                                    <span class="seo__item">o</span>
+                                 </p>
+                                 <p class="seo__text2">
+                                    <span class="seo__item">s</span>
+                                    <span class="seo__item">e</span>
+                                    <span class="seo__item">o</span>
+                                    <span class="seo__item">s</span>
+                                    <span class="seo__item">e</span>
+                                    <span class="seo__item">o</span>
+                                    <span class="seo__item">s</span>
+                                    <span class="seo__item">e</span>
+                                    <span class="seo__item">o</span>
+                                    <span class="seo__item">s</span>
+                                    <span class="seo__item">e</span>
+                                    <span class="seo__item">o</span>
+                                    <span class="seo__item">e</span>
+                                    <span class="seo__item">o</span>
+                                    <span class="seo__item">s</span>
+                                    <span class="seo__item">e</span>
+                                    <span class="seo__item">o</span>
+                                 </p>
+                              </div>
+                           </a>
+                           <a href="#" class="promotion__link swiper-slide">
+                              <div class="promotion__item smm ">
+                                 <span class="smm__title">
+                                    SMM
+                                    <svg class="smm__wave" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                                       viewBox="0 0 1000 320">
+                                       <path fill="#FEFFE0" fill-opacity="1"
+                                          d="M0,192L14.1,181.3C28.2,171,56,149,85,149.3C112.9,149,141,171,169,186.7C197.6,203,226,213,254,208C282.4,203,311,181,339,149.3C367.1,117,395,75,424,101.3C451.8,128,480,224,508,218.7C536.5,213,565,107,593,64C621.2,21,649,43,678,74.7C705.9,107,734,149,762,176C790.6,203,819,213,847,186.7C875.3,160,904,96,932,106.7C960,117,988,203,1016,245.3C1044.7,288,1073,288,1101,272C1129.4,256,1158,224,1186,218.7C1214.1,213,1242,235,1271,250.7C1298.8,267,1327,277,1355,250.7C1383.5,224,1412,160,1426,128L1440,96L1440,0L1425.9,0C1411.8,0,1384,0,1355,0C1327.1,0,1299,0,1271,0C1242.4,0,1214,0,1186,0C1157.6,0,1129,0,1101,0C1072.9,0,1045,0,1016,0C988.2,0,960,0,932,0C903.5,0,875,0,847,0C818.8,0,791,0,762,0C734.1,0,706,0,678,0C649.4,0,621,0,593,0C564.7,0,536,0,508,0C480,0,452,0,424,0C395.3,0,367,0,339,0C310.6,0,282,0,254,0C225.9,0,198,0,169,0C141.2,0,113,0,85,0C56.5,0,28,0,14,0L0,0Z">
+                                       </path>
+                                    </svg>
+                                 </span>
+
+
+                              </div>
+                           </a>
+                           <a href="#" class="promotion__link swiper-slide">
+                              <div class="promotion__item design">
+                                 <span class="design__title">ДИЗайн</span>
+                                 <div class="design__back-text">
+                                    <span class="design__text">WEB</span>
+                                    <span class="design__text">WEB</span>
+                                    <span class="design__text">WEB</span>
+                                    <span class="design__text">WEB</span>
+                                    <span class="design__text">WEB</span>
+                                    <span class="design__text">WEB</span>
+                                    <span class="design__text">WEB</span>
+                                    <span class="design__text">WEB</span>
+                                    <span class="design__text">WEB</span>
+                                    <span class="design__text">WEB</span>
+
+
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#" class="promotion__link swiper-slide">
+                              <div class="promotion__item three-d ">
+                                 <img class="three-d__img" src="img/Diamond.svg" alt="бриллиант">
+                                 <img class="three-d__img2" src="img/Plat.svg" alt="бриллиант">
+                                 <span class="three-d__title">3D</span>
+                                 <span class="three-d__subtitle">модели&shy;рование</span>
+                              </div>
+                           </a>
+                        </div>
+
+                     </div>
+                     <div class="swiper-button-prev" style="color: black;"></div>
+                     <div class="swiper-button-next" style="color: black;"></div>
+                  </div>
+               </section>
+               <section class="main__works works">
+                  <h2 class="works__title">
+                     время смотреть наши работы
+                  </h2>
+                  <ul class="works__nav">
+                     <li class="works__nav-item active" data-role="site">Сайты</li>
+                     <li class="works__nav-item " data-role="seo">Продвижение</li>
+                     <li class="works__nav-item" data-role="commercial">Реклама</li>
+                  </ul>
+                  <div class="works__container">
+                     <a href="#!" class="works__card" data-role="site">
+                        <div class="works__card-img-container card1">
+                           <span class="card1__text1">изделия</span>
+                           <span class="card1__text2">кондитерские</span>
+                           <img src="img/cart1.png" alt="сайт кондитерской" class="card1__img">
+                        </div>
+                        <h3 class="works__card-title">
+                           Производство кондитерских изделий
+                        </h3>
+                     </a>
+                     <a href="#!" class="works__card" data-role="site">
+                        <div class="works__card-img-container card2">
+                           <span class="card2__text1">агенство</span>
+                           <span class="card2__text2">недвижимости</span>
+                           <img src="img/card2.png" alt="сайт агенства" class="card2__img">
+                        </div>
+                        <h3 class="works__card-title">
+                           сеть агентств недвижимости
+                        </h3>
+                     </a>
+                     <a href="#!" class="works__card" data-role="site">
+                        <div class="works__card-img-container card3">
+                           <span class="card3__text1"> Автомобильные</span>
+                           <span class="card3__text2"> присадки</span>
+                           <img src="img/card3.png" alt="сайт магазина" class="card3__img">
+                        </div>
+                        <h3 class="works__card-title">
+                           Автомобильные присадки
+                        </h3>
+                     </a>
+                     <a href="#!" class="works__card" data-role="site">
+                        <div class="works__card-img-container card4">
+                           <span class="card4__text1"> Строительная </span>
+                           <span class="card4__text2">компания </span>
+                           <img src="img/card4.png" alt="сайт компании" class="card4__img">
+                        </div>
+                        <h3 class="works__card-title">
+                           Строительная компания в лондоне
+                        </h3>
+                     </a>
+                     <a href="#!" class="works__card" data-role="seo">
+                        <div class="works__card-img-container ">
+
+                        </div>
+                        <h3 class="works__card-title">
+                           сайт застройщика в ТОП по региону
+                        </h3>
+                     </a>
+                     <a href="#!" class="works__card" data-role="seo">
+                        <div class="works__card-img-container ">
+
+                        </div>
+                        <h3 class="works__card-title">
+                           seo продвижение сайта автосервиса
+                        </h3>
+                     </a>
+                     <a href="#!" class="works__card" data-role="seo">
+                        <div class="works__card-img-container ">
+
+                        </div>
+                        <h3 class="works__card-title">
+                           seo патронажной службы "добрая фея"
+                        </h3>
+                     </a>
+                     <a href="#!" class="works__card" data-role="commercial">
+                        <div class="works__card-img-container ">
+
+                        </div>
+                        <h3 class="works__card-title">
+                           магазин "горная лаванда"
+                        </h3>
+                     </a>
+                     <a href="#!" class="works__card" data-role="commercial">
+                        <div class="works__card-img-container ">
+
+                        </div>
+                        <h3 class="works__card-title">
+                           мед клиника "здоровье"
+                        </h3>
+                     </a>
+                     <a href="#!" class="works__card" data-role="commercial">
+                        <div class="works__card-img-container ">
+
+                        </div>
+                        <h3 class="works__card-title">
+                           стоматология "медифтор"
+                        </h3>
+                     </a>
+                     <a href="#!" class="works__card" data-role="commercial">
+                        <div class="works__card-img-container ">
+
+                        </div>
+                        <h3 class="works__card-title">
+                           патронажная служба "добрая фея"
+                        </h3>
+                     </a>
+                  </div>
+                  <a href="#!" class="works__button-more">
+                     Смотреть все проекты
+                  </a>
+               </section>
+               <section class="main__form-call form-call">
+                  <h2 class="form-call__title">
+                     хотите так же?
+                  </h2>
+                  <form action="" method="post" class="postcard-form">
+                     <div class="postcard-form__container">
+                        <div class="postcard-form__top">
+                           <p class="postcard-form__title">
+                              Почтовое сообщение в Бюро Невозможного
+                           </p>
+                           <p class="postcard-form__subtitle">
+                              Оставьте свои контакты,<br> и мы свяжемся с вами!
+                           </p>
+                           <img src="img/mark.svg" alt="марка" class="postcard-form__top-img">
+                        </div>
+                        <div class="postcard-form__bottom">
+                           <ul class="postcard-form__list">
+                              <li class="postcard-form__list-item">
+                                 <input type="text" name="user_name" placeholder="Имя *">
+                              </li>
+                              <li class="postcard-form__list-item">
+                                 <input type="email" inputmode="email" name="user_mail" placeholder="E-mail *">
+                              </li>
+                              <li class="postcard-form__list-item">
+
+                                 <input type="tel" inputmode="tel" name="user_tel" placeholder="Телефон *">
+                              </li>
+                           </ul>
+                           <button type="submit"> Отправить</button>
+                        </div>
+                     </div>
+                  </form>
+               </section>
+               <section class="main__review ">
+                  <div class="main__review-top">
+                     <h2 class="main__review-title">
+                        отзывы наших клиентов
+                     </h2>
+                     <a href="#!" class="main__review-button">
+                        Смотреть все отзывы
+                     </a>
+                  </div>
+                  <div class="rewiew">
+                     <div class="swiper1">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide review__item">
+
+                              <div class="review__inner-content">
+                                 <img src="img/review-white.svg" alt="" class="review__back">
+                                 <div class="review__inner-top">
+                                    <img src="img/review-photo.jpeg" alt="клиент" class="review__inner-photo">
+                                    <div class="review__inner-top-text">
+                                       <p class="review__inner-top-subtitle">
+                                          Сибай
+                                       </p>
+                                       <p class="review__inner-top-title">
+                                          А. Мубарякова
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <p class="review__inner-text">
+                                    Равным образом начало повседневной работы по формированию позиции в значительной
+                                    степени обуславливает создание соответствующий условий активизации.
+                                 </p>
+                                 <p class="review__inner-text">
+
+                                    С другой стороны укрепление и развитие структуры позволяет выполнять важные задания
+                                    по разработке соответствующий условий активизации. Задача организации, в особенности
+                                    же постоянный количественный рост и сфера нашей активности.
+                                 </p>
+                                 <a href="#!" class="review__inner-button">
+                                    <img src="img/original-button.svg" alt="значок" class="review__button-img">
+                                    <span class="review__button-text">
+                                       Оригинал отзыва
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="swiper-slide review__item">
+
+                              <div class="review__inner-content">
+                                 <img src="img/review-yellow.svg" alt="" class="review__back">
+                                 <div class="review__inner-top">
+                                    <img src="img/review-photo3.jpg" alt="клиент" class="review__inner-photo">
+                                    <div class="review__inner-top-text">
+                                       <p class="review__inner-top-subtitle">
+                                          Сибай
+                                       </p>
+                                       <p class="review__inner-top-title">
+                                          А. Мубарякова
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <p class="review__inner-text">
+                                    Равным образом начало повседневной работы по формированию позиции в значительной
+                                    степени обуславливает создание соответствующий условий активизации.
+                                 </p>
+                                 <p class="review__inner-text">
+
+                                    С другой стороны укрепление и развитие структуры позволяет выполнять важные задания
+                                    по разработке соответствующий условий активизации. Задача организации, в особенности
+                                    же постоянный количественный рост и сфера нашей активности.
+                                 </p>
+                                 <a href="#!" class="review__inner-button">
+                                    <img src="img/original-button.svg" alt="значок" class="review__button-img">
+                                    <span class="review__button-text">
+                                       Оригинал отзыва
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="swiper-slide review__item">
+
+                              <div class="review__inner-content">
+                                 <img src="img/review-blue.svg" alt="" class="review__back">
+                                 <div class="review__inner-top">
+                                    <img src="img/review-photo.jpeg" alt="клиент" class="review__inner-photo">
+                                    <div class="review__inner-top-text">
+                                       <p class="review__inner-top-subtitle">
+                                          Сибай
+                                       </p>
+                                       <p class="review__inner-top-title">
+                                          А. Мубарякова
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <p class="review__inner-text">
+                                    Равным образом начало повседневной работы по формированию позиции в значительной
+                                    степени обуславливает создание соответствующий условий активизации.
+                                 </p>
+                                 <p class="review__inner-text">
+
+                                    С другой стороны укрепление и развитие структуры позволяет выполнять важные задания
+                                    по разработке соответствующий условий активизации. Задача организации, в особенности
+                                    же постоянный количественный рост и сфера нашей активности.
+                                 </p>
+                                 <a href="#!" class="review__inner-button">
+                                    <img src="img/original-button.svg" alt="значок" class="review__button-img">
+                                    <span class="review__button-text">
+                                       Оригинал отзыва
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="swiper-slide review__item">
+
+                              <div class="review__inner-content">
+                                 <img src="img/review-white.svg" alt="" class="review__back">
+                                 <div class="review__inner-top">
+                                    <img src="img/review-photo1.jpg" alt="клиент" class="review__inner-photo">
+                                    <div class="review__inner-top-text">
+                                       <p class="review__inner-top-subtitle">
+                                          Сибай
+                                       </p>
+                                       <p class="review__inner-top-title">
+                                          А. Мубарякова
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <p class="review__inner-text">
+                                    Равным образом начало повседневной работы по формированию позиции в значительной
+                                    степени обуславливает создание соответствующий условий активизации.
+                                 </p>
+                                 <p class="review__inner-text">
+
+                                    С другой стороны укрепление и развитие структуры позволяет выполнять важные задания
+                                    по разработке соответствующий условий активизации. Задача организации, в особенности
+                                    же постоянный количественный рост и сфера нашей активности.
+                                 </p>
+                                 <a href="#!" class="review__inner-button">
+                                    <img src="img/original-button.svg" alt="значок" class="review__button-img">
+                                    <span class="review__button-text">
+                                       Оригинал отзыва
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="swiper-slide review__item">
+
+                              <div class="review__inner-content">
+                                 <img src="img/review-yellow.svg" alt="" class="review__back">
+                                 <div class="review__inner-top">
+                                    <img src="img/review-photo.jpeg" alt="клиент" class="review__inner-photo">
+                                    <div class="review__inner-top-text">
+                                       <p class="review__inner-top-subtitle">
+                                          Сибай
+                                       </p>
+                                       <p class="review__inner-top-title">
+                                          А. Мубарякова
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <p class="review__inner-text">
+                                    Равным образом начало повседневной работы по формированию позиции в значительной
+                                    степени обуславливает создание соответствующий условий активизации.
+                                 </p>
+                                 <p class="review__inner-text">
+
+                                    С другой стороны укрепление и развитие структуры позволяет выполнять важные задания
+                                    по разработке соответствующий условий активизации. Задача организации, в особенности
+                                    же постоянный количественный рост и сфера нашей активности.
+                                 </p>
+                                 <a href="#!" class="review__inner-button">
+                                    <img src="img/original-button.svg" alt="значок" class="review__button-img">
+                                    <span class="review__button-text">
+                                       Оригинал отзыва
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="swiper-slide review__item">
+
+                              <div class="review__inner-content">
+                                 <img src="img/review-blue.svg" alt="" class="review__back">
+                                 <div class="review__inner-top">
+                                    <img src="img/review-photo.jpeg" alt="клиент" class="review__inner-photo">
+                                    <div class="review__inner-top-text">
+                                       <p class="review__inner-top-subtitle">
+                                          Сибай
+                                       </p>
+                                       <p class="review__inner-top-title">
+                                          А. Мубарякова
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <p class="review__inner-text">
+                                    Равным образом начало повседневной работы по формированию позиции в значительной
+                                    степени обуславливает создание соответствующий условий активизации.
+                                 </p>
+                                 <p class="review__inner-text">
+
+                                    С другой стороны укрепление и развитие структуры позволяет выполнять важные задания
+                                    по разработке соответствующий условий активизации. Задача организации, в особенности
+                                    же постоянный количественный рост и сфера нашей активности.
+                                 </p>
+                                 <a href="#!" class="review__inner-button">
+                                    <img src="img/original-button.svg" alt="значок" class="review__button-img">
+                                    <span class="review__button-text">
+                                       Оригинал отзыва
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="swiper-button-prev" style="color: black;"></div>
+                        <div class="swiper-button-next" style="color: black;"></div>
+                     </div>
+                  </div>
+               </section>
+               <section class="main__price price">
+
+                  <div class="price__progress">
+                     <div class="price__progress-text">
+                        <h2 class="price__title">
+                           получите расчет стоимости работ
+                        </h2>
+                        <p class="price__subtitle">
+                           Если вы закажете сразу несколько услуг, мы сделаем скидку
+                        </p>
+                     </div>
+
+                     <div class="price__progress-bar bar">
+                        <p class="bar__percentage">Готово <span class="bar__percent">0</span>%</p>
+                        <progress value="10" max="110"></progress>
+                     </div>
+                  </div>
+                  <form action=" " method="post" class="price__calculation">
+                     <div class="price__select">
+                        <div class="price__dropdown-container">
+                           <button class="price__select-button">
+                              Какая услуга интересует
+                           </button>
+                           <ul class="price__select-dropdown">
+                              <li class="price__select-dropdown-item checkbox">
+                                 <input type="checkbox" id="site-creating" data-value="сайт">
+                                 <label for="site-creating"> Созадть продающий сайт
+                                 </label>
+                              </li>
+                              <li class="price__select-dropdown-item checkbox">
+
+                                 <input type="checkbox" id="internet-commercial" data-value="запуск рекламы">
+                                 <label for="internet-commercial"> Запустить эффективную интернет-рекламу
+                                 </label></li>
+
+                              <li class="price__select-dropdown-item checkbox">
+                                 <input type="checkbox" id="site-changes" data-value="корректировки на сайт">
+                                 <label for="site-changes"> Оперативно внести изменения на сайт
+                                 </label></li>
+                              <li class="price__select-dropdown-item checkbox">
+
+                                 <input type="checkbox" id="seo" data-value="seo">
+                                 <label for="seo"> SEO продвижение
+                                 </label></li>
+                              <li class="price__select-dropdown-item checkbox">
+
+                                 <input type="checkbox" id="3d-modeling" data-value="3d">
+                                 <label for="3d-modeling">3d моделирование
+                                 </label></li>
+                              <li class="price__select-dropdown-item checkbox">
+
+                                 <input type="checkbox" id="design" data-value="дизайн">
+                                 <label for="design">Дизайн чего-либо
+                                 </label></li>
+                              <li class="price__select-dropdown-item checkbox">
+                                 <input type="checkbox" id="another" data-value="другое">
+                                 <label for="another">Другое
+                                 </label> </li>
+                           </ul>
+                           <input type="text" class="input-hidden " name="services-option" id="services-option"
+                              value="">
+                        </div>
+                        <div class="price__dropdown-container">
+                           <button class="price__select-button speed-button" data-value="">
+                              Насколько срочен вопрос
+                           </button>
+                           <ul class="price__select-dropdown ">
+                              <li class="price__select-dropdown-item">
+                                 <input type="radio" id="default-value" name="speed" data-value="">
+                                 <label for="default-value"> Насколько срочен вопрос
+                                 </label>
+                              </li>
+                              <li class="price__select-dropdown-item">
+                                 <input type="radio" id="site-creatin" name="speed" data-value="очень срочно">
+                                 <label for="site-creatin"> Очень срочно!Звоните мне и начинаем!
+                                 </label>
+                              </li>
+                              <li class="price__select-dropdown-item ">
+                                 <input type="radio" id="internet-commercia" name="speed" data-value="не очень срочно">
+                                 <label for="internet-commercia"> Подбираю варианты, в ближайшее время начнём
+                                 </label></li>
+
+                              <li class="price__select-dropdown-item ">
+                                 <input type="radio" id="site-change" name="speed" data-value="не срочно">
+                                 <label for="site-change"> Я просто проходил мимо...
+                                 </label></li>
+
+
+                           </ul>
+                           <input type="text" class="input-hidden " name="speed-option" id="speed-option"
+                              data-pre-value="" value="">
+                        </div>
+                        <div class="price__select-description-container">
+                           <textarea class="price__select-description " name="input-description" id="input-description"
+                              maxlength="1000" autocorrect="on" placeholder="Опишите ваш бизнес..."></textarea>
+                           <span class="price__select-description-counter"><span
+                                 class="price__select-description-count-number">0</span>/1000</span>
+                        </div>
+                        <button class="price__calculation-button" type="submit">Продолжить</button>
+                     </div>
+                     <div class="price__discount discount">
+                        <div class="discount__total">
+                           <p class="discount__text">Ваша скидка</p>
+
+                           <span class="discount__sum"><span class="discount__number">0</span>₽</span>
+                        </div>
+                        <div class="discount__book">
+                           <p class="discount__text">Книга: Маркетинг <br> без бюджета</p>
+                           <img src="img/book.png" alt="книга" class="discount__book-img">
+                           <img src="img/locer.svg" alt="" class="discount__back">
+                        </div>
+                     </div>
+                  </form>
+
+                  <div class="price__popup price-popup">
+                     <div class="price-popup__container">
+                        <div class="price-popup__decision">
+                           <p class="price-popup__decision-title">
+                              Заполните форму, <br> чтобы получить результаты теста
+                           </p>
+                           <p class="price-popup__decision-discount">
+                              Ваша скидка: <span class="discount-count"></span> рублей
+                           </p>
+                           <button class="price-popup__decision-button">
+                              Назад
+                           </button>
+                        </div>
+                        <div class="price-popup__form">
+                           <form action="" class=" popup-form" method="post">
+                              <ul class="popup-form__list">
+                                 <li class="popup-form__list-item">
+                                    <input type="text" name="user_name" placeholder="Имя *">
+                                 </li>
+                                 <li class="popup-form__list-item">
+                                    <input type="email" inputmode="email" name="user_mail" placeholder="E-mail *">
+                                 </li>
+                                 <li class="popup-form__list-item">
+
+                                    <input type="tel" inputmode="tel" name="user_tel" placeholder="Телефон *">
+                                 </li>
+                              </ul>
+                              <button class="popup-form__button" type="submit"> Получить результаты</button>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="main__blog blog">
+                  <h2 class="main__blog-title">
+                     блог
+                  </h2>
+                  <div class="blog__container">
+                     <a href="#!" class="blog__card-container">
+                        <div class="blog__card-img">
+                           <img src="img/news-card1.jpg" alt="новость" class="blog__img">
+                        </div>
+                        <p class="blog__date"><span class="blog__theme">IT</span> | <span
+                              class="blog__date-time">21.10.2021</span></p>
+                        <h3 class="blog__title">
+                           SEO продвижение сайта по всей России. Как это происходит и как сделать?
+                        </h3>
+                     </a>
+                     <a href="#!" class="blog__card-container">
+                        <div class="blog__card-img">
+                           <img src="img/news-card2.jpg" alt="новость" class="blog__img">
+                        </div>
+                        <p class="blog__date"><span class="blog__theme">IT</span> | <span
+                              class="blog__date-time">21.10.2021</span></p>
+                        <h3 class="blog__title">
+                           Как IT-специалисту ворваться на рынок фриланс услуг и не потерять честь
+                        </h3>
+                     </a>
+                     <a href="#!" class="blog__card-container">
+                        <div class="blog__card-img">
+                           <img src="img/news-card3.jpg" alt="новость" class="blog__img">
+                        </div>
+                        <p class="blog__date"><span class="blog__theme">IT</span> | <span
+                              class="blog__date-time">21.10.2021</span></p>
+                        <h3 class="blog__title">
+                           SEO продвижение сайта по всей России. Как это происходит и как сделать?
+                        </h3>
+                     </a>
+                  </div>
+                  <a href="#!" class="main__blog-button">
+                     Больше статей
+                  </a>
+               </section>
+               <section class="main__awards awards">
+                  <h2 class="main__awards-title">
+                     награды нашей студии
+                  </h2>
+                  <div class="awards__cards-container">
+                     <div class="awards__container">
+                        <img src="img/awards-card.svg" alt="" class="awards__card">
+                        <img src="img/awards-card-img.jpg" alt="gg" class="awards__img">
+                        <div class="img-cover "></div>
+                     </div>
+                     <div class="awards__container">
+                        <img src="img/awards-card.svg" alt="" class="awards__card">
+                        <img src="img/awards-card2.jpg" alt="gg" class="awards__img">
+                        <div class="img-cover blue"></div>
+                     </div>
+                     <div class="awards__container">
+                        <img src="img/awards-card.svg" alt="" class="awards__card">
+                        <img src="img/awards-card3.jpg" alt="gg" class="awards__img">
+                        <div class="img-cover white"></div>
+                     </div>
+                     <div class="awards__container">
+                        <img src="img/awards-card.svg" alt="" class="awards__card">
+                        <img src="img/awards-card4.jpg" alt="gg" class="awards__img">
+                        <div class="img-cover"></div>
+
+                     </div>
+                  </div>
+                  <a href="#!" class="main__awards-button">
+                     Все награды
+                  </a>
+               </section>
+            </div>
+         </div>
+
+      </main>
+      <footer class="footer">
+         <div class="footer__container container">
+            <div class="footer__content-container content-container">
+               <div class="footer__content content">
+                  <div class="content__info">
+                     <ul class="content__info-item">
+                        <li class="content__info-item-name">
+                           ТЕЛЕФОН
+                        </li>
+                        <li class="content__info-item-descr">
+                           <a href="tel:+79656570023">
+                              +7 (965) 657-00-23
+                           </a>
+                        </li>
+                     </ul>
+                     <ul class="content__info-item">
+                        <li class="content__info-item-name">
+                           WHATSAPP
+                        </li>
+                        <li class="content__info-item-descr">
+                           <a href="https://api.whatsapp.com/send?phone=79656570023">
+                              +7 (965) 657-00-23
+                           </a>
+                        </li>
+                     </ul>
+                     <ul class="content__info-item">
+                        <li class="content__info-item-name">
+                           E-MAIL
+                        </li>
+                        <li class="content__info-item-descr">
+                           <a href="mailto:impossible@studio.ru">
+                              impossible@studio.ru
+                           </a>
+                        </li>
+                     </ul>
+                     <ul class="content__info-item">
+                        <li class="content__info-item-name">
+                           АДРЕС
+                        </li>
+                        <li class="content__info-item-descr footer-adress">
+                           Уфа, Кавказская 12
+                        </li>
+                     </ul>
+
+                  </div>
+                  <a href="#!" class="content__button">
+                     Получить КП
+                  </a>
+                  <div class="content__social">
+                     <a href="https://vk.com/bureau_impossible" class="content__social-link">
+                        <img src="img/VK-logo.svg" alt="вконтакте" class="content__logo">
+                     </a>
+                     <a href="#!" class="content__social-link">
+                        <img src="img/instalogo.svg" alt="инстаграм" class="content__logo">
+                     </a>
+                  </div>
+
+               </div>
+               <div class="footer__copyright">
+                  <p class="footer__copyright-text">
+                     ©2011—2022 Бюро невозможного
+                  </p>
+                  <a href="#!" class="footer__copyright-confidential">
+                     Политика конфиденциальности
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/main.min.js"></script>
+
+
+</html>
